@@ -2,194 +2,235 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<title>Ujjain Wale Panditji | Jyotish Anushthan Karmakand Kendra</title>
+<title>Ujjain Wale Panditji</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+html{
+    scroll-behavior:smooth;
+}
 body{
     margin:0;
-    font-family:'Poppins', sans-serif;
-    background:#fdfaf6;
-    color:#333;
+    font-family:'Poppins',sans-serif;
+    background:#fffaf3;
 }
 
-/* Header */
-header{
-    background:linear-gradient(to right,#ff9933,#ff6600);
+/* SIDEBAR */
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100%;
+    background:#2c1b0f;
     color:white;
-    padding:15px 30px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    text-align:center;
+    padding:15px 10px;
+    font-size:20px;
+    background:#1a0f08;
+}
+
+.sidebar a{
     display:flex;
     align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    font-size:22px;
-    font-weight:600;
-}
-
-nav a{
+    padding:12px 20px;
     color:white;
-    margin-left:20px;
     text-decoration:none;
-    font-weight:500;
+    font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-nav a:hover{
-    text-decoration:underline;
+.sidebar a i{
+    width:25px;
+    color:#ffd700;
 }
 
-/* Hero Section */
+.sidebar a:hover{
+    background:#ff6600;
+}
+
+/* MAIN */
+.main{
+    margin-left:260px;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#ff9933,#ff6600);
+    padding:15px 25px;
+    color:white;
+}
+
+/* HERO */
 .hero{
-    background:url('https://i.imgur.com/2JgZ6zE.jpg') center/cover;
-    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://i.imgur.com/XV2ZpYk.jpg') center/cover;
+    padding:100px 20px;
     text-align:center;
     color:white;
 }
 
-.hero h1{
-    font-size:36px;
-    margin-bottom:10px;
-}
-
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-.hero button{
-    background:#ffd700;
-    border:none;
-    padding:12px 25px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    border-radius:6px;
-}
-
-/* Services */
+/* SECTIONS */
 section{
-    padding:50px 20px;
     max-width:1100px;
     margin:auto;
+    padding:70px 20px;
 }
 
 .section-title{
     text-align:center;
     font-size:28px;
-    margin-bottom:40px;
     color:#cc5500;
+    margin-bottom:30px;
 }
 
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.service-card{
+.card{
     background:white;
-    padding:30px;
+    padding:25px;
     border-radius:12px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    margin-bottom:20px;
 }
 
-.service-card i{
-    font-size:40px;
-    color:#ff6600;
-    margin-bottom:15px;
-}
-
-.service-card h3{
-    margin-bottom:10px;
-}
-
-/* Footer */
+/* FOOTER */
 footer{
-    background:#2c2c2c;
+    background:#2b2b2b;
     color:white;
+    padding:25px;
     text-align:center;
-    padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        🔱 Ujjain Wale Panditji
-    </div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Ujjain Special</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>🔱 Ujjain Wale Panditji</h2>
 
-<!-- Hero -->
-<div class="hero">
-    <h1>Jyotish Anushthan Karmakand Kendra, Ujjain</h1>
-    <p>महाकाल की नगरी उज्जैन से वैदिक एवं तांत्रिक अनुष्ठान सेवाएं</p>
-    <button>📞 Book Anushthan</button>
+<a href="#home"><i class="fas fa-home"></i>Home</a>
+<a href="#services"><i class="fas fa-star"></i>Services</a>
+<a href="#rashifal"><i class="fas fa-sun"></i>Rashifal</a>
+<a href="#kundli"><i class="fas fa-user-astronaut"></i>Kundli (Premium)</a>
+<a href="#ratna"><i class="fas fa-gem"></i>Ratna</a>
+<a href="#panchang"><i class="fas fa-calendar"></i>Panchang</a>
+<a href="#bhakti"><i class="fas fa-om"></i>Bhakti Sagar</a>
+<a href="#ujjain"><i class="fas fa-temple-hindu"></i>Ujjain Darshan</a>
+<a href="#kumbh"><i class="fas fa-flag"></i>Kumbh Mela 2028</a>
+<a href="#gallery"><i class="fas fa-images"></i>Gallery</a>
+<a href="#shop"><i class="fas fa-store"></i>Shop</a>
+<a href="#prakashan"><i class="fas fa-bullhorn"></i>Vishesh Prakashan</a>
+<a href="#books"><i class="fas fa-book"></i>Books</a>
+<a href="#vidwan"><i class="fas fa-users"></i>Hamare Pramukh Vidwan</a>
+<a href="#about"><i class="fas fa-info-circle"></i>About Us</a>
+<a href="#terms"><i class="fas fa-file-contract"></i>Terms & Conditions</a>
+<a href="#legality"><i class="fas fa-scale-balanced"></i>Legality</a>
 </div>
 
-<!-- Services -->
-<section>
-    <h2 class="section-title">हमारी प्रमुख सेवाएं</h2>
+<!-- MAIN CONTENT -->
+<div class="main">
 
-    <div class="services">
+<header id="home">
+<h2>Jyotish Anushthan Karmakand Kendra, Ujjain</h2>
+</header>
 
-        <div class="service-card">
-            <i class="fas fa-star"></i>
-            <h3>ज्योतिष परामर्श</h3>
-            <p>कुंडली विश्लेषण, विवाह मिलान, भविष्यफल</p>
-        </div>
+<div class="hero">
+<h1>महाकाल की पावन नगरी उज्जैन</h1>
+<p>वैदिक ज्योतिष • अनुष्ठान • कर्मकांड</p>
+</div>
 
-        <div class="service-card">
-            <i class="fas fa-fire"></i>
-            <h3>हवन एवं यज्ञ</h3>
-            <p>नवग्रह शांति, महामृत्युंजय यज्ञ</p>
-        </div>
+<section id="services">
+<h2 class="section-title">Services</h2>
+<div class="card">ज्योतिष परामर्श, हवन, यज्ञ, जाप</div>
+</section>
 
-        <div class="service-card">
-            <i class="fas fa-om"></i>
-            <h3>जाप एवं पाठ</h3>
-            <p>रुद्राभिषेक, महामंत्र जाप</p>
-        </div>
+<section id="rashifal">
+<h2 class="section-title">Rashifal</h2>
+<div class="card">Daily • Weekly • Monthly • Yearly Rashifal</div>
+</section>
 
-        <div class="service-card">
-            <i class="fas fa-hand-sparkles"></i>
-            <h3>तंत्र अनुष्ठान</h3>
-            <p>शक्ति साधना एवं विशेष अनुष्ठान</p>
-        </div>
+<section id="kundli">
+<h2 class="section-title">Premium Kundli</h2>
+<div class="card">Advanced Kundli Analysis (Paid)</div>
+</section>
 
-        <div class="service-card">
-            <i class="fas fa-mountain-sun"></i>
-            <h3>उज्जैन विशेष पूजा</h3>
-            <p>महाकाल, कालभैरव, मंगलनाथ पूजा</p>
-        </div>
+<section id="ratna">
+<h2 class="section-title">Ratna</h2>
+<div class="card">Gemstone Recommendation</div>
+</section>
 
-        <div class="service-card">
-            <i class="fas fa-leaf"></i>
-            <h3>पितृ दोष निवारण</h3>
-            <p>श्राद्ध, तर्पण एवं मोक्ष कर्म</p>
-        </div>
+<section id="panchang">
+<h2 class="section-title">Panchang</h2>
+<div class="card">Daily Panchang & Muhurat</div>
+</section>
 
-    </div>
+<section id="bhakti">
+<h2 class="section-title">Bhakti Sagar</h2>
+<div class="card">Aarti • Mantra • Chalisa</div>
+</section>
+
+<section id="ujjain">
+<h2 class="section-title">Ujjain Darshan</h2>
+<div class="card">Mahakal • Kal Bhairav • Mangalnath</div>
+</section>
+
+<section id="kumbh">
+<h2 class="section-title">Kumbh Mela 2028</h2>
+<div class="card">Kumbh Updates & Darshan Guide</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+<div class="card">Photos & Videos</div>
+</section>
+
+<section id="shop">
+<h2 class="section-title">Shop</h2>
+<div class="card">Puja Samagri • Yantra • Books</div>
+</section>
+
+<section id="prakashan">
+<h2 class="section-title">Vishesh Prakashan</h2>
+<div class="card">Special Articles & Predictions</div>
+</section>
+
+<section id="books">
+<h2 class="section-title">Books</h2>
+<div class="card">Spiritual & Astrology Books</div>
+</section>
+
+<section id="vidwan">
+<h2 class="section-title">Hamare Pramukh Vidwan</h2>
+<div class="card">Experienced Pandits & Acharyas</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="card">Ujjain based Vedic Experts</div>
+</section>
+
+<section id="terms">
+<h2 class="section-title">Terms & Conditions</h2>
+<div class="card">Website Terms</div>
+</section>
+
+<section id="legality">
+<h2 class="section-title">Legality</h2>
+<div class="card">Legal Information</div>
 </section>
 
 <footer>
-    <p>© 2026 Ujjain Wale Panditji | All Rights Reserved</p>
+© 2026 Ujjain Wale Panditji | All Rights Reserved
 </footer>
+
+</div>
 
 </body>
 </html>
